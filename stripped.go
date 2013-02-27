@@ -11,11 +11,11 @@
 //
 // This is a quick hack that needs some cleaning - but works for what
 // i need now...
-
 package blackfriday
 
 import (
 	"bytes"
+	"fmt"
 )
 
 // Stripped is a type that implements the Renderer interface for output
@@ -31,6 +31,7 @@ type Stripped struct {
 // flags is a set of STRIPPED_* options ORed together (currently no such
 // options are defined).
 func StrippedRenderer(flags int) Renderer {
+	fmt.Println("!!!!!!!!!!!!!")
 	return &Stripped{}
 }
 
